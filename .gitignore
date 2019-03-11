@@ -9,10 +9,6 @@ build-eclipse
 *~
 metastore_db
 common/src/gen
-.idea
-*.iml
-*.ipr
-*.iws
 *.swp
 derby.log
 datanucleus.log

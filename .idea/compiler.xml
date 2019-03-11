@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hive-ant" />
+        <module name="hive-cli" />
+        <module name="hive-exec" />
+        <module name="hive-hwi" />
+        <module name="hive-jdbc" />
+        <module name="hive-orc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hive" target="1.5" />
+      <module name="hive-ant" target="1.7" />
+      <module name="hive-cli" target="1.7" />
+      <module name="hive-exec" target="1.7" />
+      <module name="hive-hwi" target="1.7" />
+      <module name="hive-jdbc" target="1.7" />
+      <module name="hive-odbc" target="1.5" />
+      <module name="hive-orc" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

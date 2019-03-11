@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/accumulo-handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ant" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/beeline" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/classification" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cli" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/contrib" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/druid-handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hbase-handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hcatalog" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hcatalog/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hcatalog/hcatalog-pig-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hcatalog/server-extensions" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hcatalog/streaming" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hcatalog/webhcat/java-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hcatalog/webhcat/svr" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hplsql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hwi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jdbc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jdbc-handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kryo-registrator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/llap-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/llap-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/llap-ext-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/llap-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/llap-tez" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/metastore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/odbc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/packaging" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serde" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-rpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shims" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shims/0.23" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shims/aggregator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shims/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shims/scheduler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spark-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/standalone-metastore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/storage-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/streaming" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testutils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/upgrade-acid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vector-code-gen" charset="UTF-8" />
+  </component>
+</project>

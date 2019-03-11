@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hive.iml" filepath="$PROJECT_DIR$/hive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ant/hive-ant.iml" filepath="$PROJECT_DIR$/ant/hive-ant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cli/hive-cli.iml" filepath="$PROJECT_DIR$/cli/hive-cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ql/hive-exec.iml" filepath="$PROJECT_DIR$/ql/hive-exec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hwi/hive-hwi.iml" filepath="$PROJECT_DIR$/hwi/hive-hwi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/hive-jdbc.iml" filepath="$PROJECT_DIR$/jdbc/hive-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/odbc/hive-odbc.iml" filepath="$PROJECT_DIR$/odbc/hive-odbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orc/hive-orc.iml" filepath="$PROJECT_DIR$/orc/hive-orc.iml" />
+    </modules>
+  </component>
+</project>

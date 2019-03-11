@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/accumulo-handler/pom.xml" />
+        <option value="$PROJECT_DIR$/beeline/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/contrib/pom.xml" />
+        <option value="$PROJECT_DIR$/hbase-handler/pom.xml" />
+        <option value="$PROJECT_DIR$/hcatalog/core/pom.xml" />
+        <option value="$PROJECT_DIR$/hcatalog/hcatalog-pig-adapter/pom.xml" />
+        <option value="$PROJECT_DIR$/hcatalog/pom.xml" />
+        <option value="$PROJECT_DIR$/hcatalog/server-extensions/pom.xml" />
+        <option value="$PROJECT_DIR$/hcatalog/streaming/pom.xml" />
+        <option value="$PROJECT_DIR$/hcatalog/webhcat/java-client/pom.xml" />
+        <option value="$PROJECT_DIR$/hcatalog/webhcat/svr/pom.xml" />
+        <option value="$PROJECT_DIR$/hplsql/pom.xml" />
+        <option value="$PROJECT_DIR$/llap-client/pom.xml" />
+        <option value="$PROJECT_DIR$/llap-common/pom.xml" />
+        <option value="$PROJECT_DIR$/llap-server/pom.xml" />
+        <option value="$PROJECT_DIR$/llap-tez/pom.xml" />
+        <option value="$PROJECT_DIR$/metastore/pom.xml" />
+        <option value="$PROJECT_DIR$/packaging/pom.xml" />
+        <option value="$PROJECT_DIR$/serde/pom.xml" />
+        <option value="$PROJECT_DIR$/service/pom.xml" />
+        <option value="$PROJECT_DIR$/shims/0.23/pom.xml" />
+        <option value="$PROJECT_DIR$/shims/aggregator/pom.xml" />
+        <option value="$PROJECT_DIR$/shims/common/pom.xml" />
+        <option value="$PROJECT_DIR$/shims/pom.xml" />
+        <option value="$PROJECT_DIR$/shims/scheduler/pom.xml" />
+        <option value="$PROJECT_DIR$/spark-client/pom.xml" />
+        <option value="$PROJECT_DIR$/storage-api/pom.xml" />
+        <option value="$PROJECT_DIR$/testutils/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+</project>
