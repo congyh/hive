@@ -809,6 +809,7 @@ public class CliDriver {
     String curPrompt = prompt + curDB;
     String dbSpaces = spacesForString(curDB);
 
+    // Note: 这里读入sql文件
     while ((line = reader.readLine(curPrompt + "> ")) != null) {
       if (!prefix.equals("")) {
         prefix += '\n';

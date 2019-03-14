@@ -47,6 +47,8 @@ import com.google.common.base.Strings;
 import com.google.common.collect.Sets;
 
 /**
+ * Note: Optimizer是在逻辑计划的查询优化器. 什么谓词下推的都是一个Transformer类型,
+ * 挂载到List<Transform> transformations当中.
  * Implementation of the optimizer.
  */
 public class Optimizer {
@@ -77,6 +79,8 @@ public class Optimizer {
         Strings.nullToEmpty(HiveConf.getVar(hiveConf, HiveConf.ConfVars.POSTEXECHOOKS))));
     if (postExecHooks.contains("org.apache.hadoop.hive.ql.hooks.PostExecutePrinter")
         || postExecHooks.contains("org.apache.hadoop.hive.ql.hooks.LineageLogger")
+            // Note: 注意, Hive2.0.0版本的源码中, 还没有以下一行, 所以需要手动额外挂载以上两个类中的一个强制进行
+            // 列级别血统解析.
         || postExecHooks.contains("org.apache.atlas.hive.hook.HiveHook")) {
       transformations.add(new Generator(postExecHooks));
     }

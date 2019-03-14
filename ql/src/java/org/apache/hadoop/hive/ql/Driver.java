@@ -2214,6 +2214,10 @@ public class Driver implements IDriver {
     }
   }
 
+  /**
+   * Note: 执行解析后的sql
+   * @throws CommandProcessorResponse
+   */
   private void execute() throws CommandProcessorResponse {
     PerfLogger perfLogger = SessionState.getPerfLogger();
     perfLogger.PerfLogBegin(CLASS_NAME, PerfLogger.DRIVER_EXECUTE);
