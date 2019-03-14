@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0a1167d-1b94-402d-bbc8-0db110559e71" name="Default Changelist" comment="" />
+    <list default="true" id="e0a1167d-1b94-402d-bbc8-0db110559e71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Optimizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Optimizer.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/odbc/target/" />
     <ignored path="$PROJECT_DIR$/orc/target/" />
     <ignored path="$PROJECT_DIR$/ant/target/" />
@@ -10,10 +14,45 @@
     <ignored path="$PROJECT_DIR$/hwi/target/" />
     <ignored path="$PROJECT_DIR$/ql/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.22.1" />
+      </map>
+    </option>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="289024631">
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="18" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="SQL" value="5" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="47" />
+          <entry key="SQL" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Unnamed">
@@ -12231,195 +12270,145 @@
         <favorite_root url="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/OpProcFactory.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
         <favorite_root url="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/ExprProcFactory.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       </favorite_root>
-      <favorite_root url="org.apache.hadoop.hive.ql.hooks.LineageInfo" module="hive-exec" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
+      <favorite_root url="org.apache.hadoop.hive.cli.CliDriver" module="hive-cli" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
+      <favorite_root url="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/Driver.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Optimizer.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/Generator.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
     </favorites_list>
     <favorites_list name="hook">
       <favorite_root url="org.apache.hadoop.hive.ql.hooks.HookContext" module="hive-exec" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
       <favorite_root url="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PostExecutePrinter.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       <favorite_root url="org.apache.hadoop.hive.ql.hooks.PostExecutePrinter" module="hive-exec" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
       <favorite_root url="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/LineageLogger.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="org.apache.hadoop.hive.ql.hooks.LineageInfo" module="hive-exec" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/HookContext.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="500">
-                  <caret line="25" selection-start-line="25" selection-end-line="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/Driver.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3440">
-                  <caret line="306" column="5" selection-start-line="306" selection-start-column="5" selection-end-line="306" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/ExecuteWithHookContext.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/LineageInfo.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="940">
-                  <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PostExecutePrinter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2680">
-                  <caret line="150" column="13" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PostExecOrcFileDump.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="920">
-                  <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PreExecutePrinter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1300">
-                  <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/LineageLogger.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/LineageCtx.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="912">
-                  <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#8825#8826#0" expanded="true" />
-                    <element signature="e#8846#8847#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Map.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3700">
-                  <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/LineageInfo.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1538">
-                  <caret line="488" column="42" selection-start-line="488" selection-start-column="42" selection-end-line="488" selection-end-column="42" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#3426#3427#0" expanded="true" />
-                    <element signature="e#3461#3462#0" expanded="true" />
-                    <element signature="e#3492#3493#0" expanded="true" />
-                    <element signature="e#3521#3522#0" expanded="true" />
-                    <element signature="e#3560#3561#0" expanded="true" />
-                    <element signature="e#3590#3591#0" expanded="true" />
-                    <element signature="e#4670#4671#0" expanded="true" />
-                    <element signature="e#4698#4699#0" expanded="true" />
-                    <element signature="e#4741#4742#0" expanded="true" />
-                    <element signature="e#4770#4771#0" expanded="true" />
-                    <element signature="e#5654#5655#0" expanded="true" />
-                    <element signature="e#5689#5690#0" expanded="true" />
-                    <element signature="e#6375#6376#0" expanded="true" />
-                    <element signature="e#6404#6405#0" expanded="true" />
-                    <element signature="e#6519#6520#0" expanded="true" />
-                    <element signature="e#6557#6558#0" expanded="true" />
-                    <element signature="e#6637#6638#0" expanded="true" />
-                    <element signature="e#6664#6665#0" expanded="true" />
-                    <element signature="e#6768#6769#0" expanded="true" />
-                    <element signature="e#6802#6803#0" expanded="true" />
-                    <element signature="e#6848#6849#0" expanded="true" />
-                    <element signature="e#6892#6893#0" expanded="true" />
-                    <element signature="e#7846#7847#0" expanded="true" />
-                    <element signature="e#7872#7873#0" expanded="true" />
-                    <element signature="e#7967#7968#0" expanded="true" />
-                    <element signature="e#7999#8000#0" expanded="true" />
-                    <element signature="e#8071#8072#0" expanded="true" />
-                    <element signature="e#8097#8098#0" expanded="true" />
-                    <element signature="e#8191#8192#0" expanded="true" />
-                    <element signature="e#8223#8224#0" expanded="true" />
-                    <element signature="e#8269#8270#0" expanded="true" />
-                    <element signature="e#8356#8357#0" expanded="true" />
-                    <element signature="e#9492#9493#0" expanded="true" />
-                    <element signature="e#9517#9518#0" expanded="true" />
-                    <element signature="e#9616#9617#0" expanded="true" />
-                    <element signature="e#9646#9647#0" expanded="true" />
-                    <element signature="e#9717#9718#0" expanded="true" />
-                    <element signature="e#9742#9743#0" expanded="true" />
-                    <element signature="e#9833#9834#0" expanded="true" />
-                    <element signature="e#9863#9864#0" expanded="true" />
-                    <element signature="e#9955#9956#0" expanded="true" />
-                    <element signature="e#9984#9985#0" expanded="true" />
-                    <element signature="e#10104#10105#0" expanded="true" />
-                    <element signature="e#10142#10143#0" expanded="true" />
-                    <element signature="e#10188#10189#0" expanded="true" />
-                    <element signature="e#10236#10237#0" expanded="true" />
-                    <element signature="e#10580#10596#0" expanded="true" />
-                    <element signature="e#10669#10670#0" expanded="true" />
-                    <element signature="e#10694#10695#0" expanded="true" />
-                    <element signature="e#10785#10786#0" expanded="true" />
-                    <element signature="e#10815#10816#0" expanded="true" />
-                    <element signature="e#10907#10908#0" expanded="true" />
-                    <element signature="e#10936#10937#0" expanded="true" />
-                    <element signature="e#10979#10980#0" expanded="true" />
-                    <element signature="e#11059#11060#0" expanded="true" />
-                    <element signature="e#11719#11720#0" expanded="true" />
-                    <element signature="e#11812#11813#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/CliDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="232" selection-start-line="232" selection-end-line="232" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#8694#8702#0" expanded="true" />
+                <element signature="e#11658#11659#0" expanded="true" />
+                <element signature="e#11699#11700#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Optimizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="70" column="66" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/DevelopmentTools/apache-atlas-1.1.0/apache-atlas-1.1.0-hive-hook/apache-atlas-hive-hook-1.1.0/hook/hive/dim_szad_material_mapping_postprinter_customize.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/DevelopmentTools/apache-atlas-1.1.0/apache-atlas-1.1.0-hive-hook/apache-atlas-hive-hook-1.1.0/hook/hive/dim_szad_material_mapping_postprinter.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" selection-start-line="2" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Transform.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/Generator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="96" column="52" lean-forward="true" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/lib/LevelOrderWalker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="1300" selection-start-line="1300" selection-end-line="1300" />
+              <folding>
+                <element signature="e#11567#11568#0" expanded="true" />
+                <element signature="e#11649#11650#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/LineageCtx.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/parse/BaseSemanticAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="238" selection-start-line="238" selection-end-line="238" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>addFinalSelectOp</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$USER_HOME$/DevelopmentTools/apache-atlas-1.1.0/apache-atlas-1.1.0-hive-hook/apache-atlas-hive-hook-1.1.0/hook/hive/dim_szad_material_mapping_postprinter.sql" />
+        <option value="$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Optimizer.java" />
+        <option value="$USER_HOME$/DevelopmentTools/apache-atlas-1.1.0/apache-atlas-1.1.0-hive-hook/apache-atlas-hive-hook-1.1.0/hook/hive/dim_szad_material_mapping_postprinter_customize.sql" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -12434,6 +12423,12 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-217" />
+    <option name="y" value="-1417" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -12441,292 +12436,253 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="apache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-              <item name="gen-java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-              <item name="gen-java" type="462c0819:PsiDirectoryNode" />
-              <item name="proto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="ql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="apache" type="462c0819:PsiDirectoryNode" />
               <item name="hive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
               <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hive" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
               <item name="hive" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="exec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
               <item name="hive" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="hooks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hive" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="optimizer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
               <item name="hive" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="optimizer" type="462c0819:PsiDirectoryNode" />
               <item name="lineage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
               <item name="hive" type="462c0819:PsiDirectoryNode" />
               <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="parse" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="standalone-metastore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="standalone-metastore" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="standalone-metastore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="standalone-metastore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="standalone-metastore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="gen-javabean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hive" type="462c0819:PsiDirectoryNode" />
-              <item name="standalone-metastore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="gen-javabean" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="session" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="hive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hive-release-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hive-release-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="ql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="hive" type="462c0819:PsiDirectoryNode" />
+              <item name="metastore" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552558645627" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -12740,12 +12696,48 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Remote.hive-2.0.0-debug-atlas">
+    <configuration name="hive-2.0.0-debug" type="Application" factoryName="Application">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hive-2.0.0-debug-atlas" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8000" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8000" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="hive-2.0.0-debug" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8000" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8000" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.hive-2.0.0-debug" />
+      <item itemvalue="Remote.hive-2.0.0-debug" />
+      <item itemvalue="Remote.hive-2.0.0-debug-atlas" />
+    </list>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="11e85621-58cc-414a-96d1-2e6b17761de3" name="Default Changelist" comment="" />
+      <changelist id="e0a1167d-1b94-402d-bbc8-0db110559e71" name="Default Changelist" comment="" />
       <created>1547106638144</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -12759,33 +12751,76 @@
       <workItem from="1551922662572" duration="1249000" />
       <workItem from="1552009977856" duration="599000" />
       <workItem from="1552269389987" duration="2028000" />
-      <workItem from="1552297812647" duration="423000" />
+      <workItem from="1552297812647" duration="4816000" />
+      <workItem from="1552355877845" duration="1521000" />
+      <workItem from="1552441956247" duration="2063000" />
+      <workItem from="1552528929886" duration="11481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41000" />
+    <option name="totallyTimeSpent" value="19499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-217" y="-1417" width="2560" height="1417" extended-state="0" />
+    <frame x="-217" y="-1417" width="2560" height="1417" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49176955" visible="true" weight="0.08617951" />
-      <window_info id="Structure" order="1" sideWeight="0.50823045" side_tool="true" visible="true" weight="0.08617951" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48989898" visible="true" weight="0.08617951" />
+      <window_info id="Structure" order="1" sideWeight="0.510101" side_tool="true" visible="true" weight="0.08617951" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.503663" side_tool="true" weight="0.15011914" />
+      <window_info id="Favorites" order="5" sideWeight="0.5102302" side_tool="true" weight="0.08617951" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39170507" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25345623" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25345623" />
+      <window_info anchor="bottom" id="CheckStyle" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="14" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.24980143" />
+      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Codota" order="12" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4910486" visible="true" weight="0.08617951" />
+      <window_info id="Structure" order="1" sideWeight="0.5089514" side_tool="true" weight="0.08617951" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info active="true" id="Favorites" order="5" sideWeight="0.5089514" side_tool="true" weight="0.08617951" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39938557" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25345623" />
       <window_info anchor="bottom" id="CheckStyle" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -12805,9 +12840,455 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
-    </layout>
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/CliDriver.java</url>
+          <line>650</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PostExecutePrinter.java</url>
+          <line>129</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PostExecutePrinter.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/Driver.java</url>
+          <line>1691</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/LineageCtx.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/Driver.java</url>
+          <line>1685</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/CliDriver.java</url>
+          <line>716</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/CliDriver.java</url>
+          <line>775</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/CliDriver.java</url>
+          <line>748</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/CliDriver.java</url>
+          <line>478</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/CliDriver.java</url>
+          <line>232</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/Driver.java</url>
+          <line>1300</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/parse/BaseSemanticAnalyzer.java</url>
+          <line>238</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Optimizer.java</url>
+          <line>242</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/lib/LevelOrderWalker.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/Generator.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/Generator.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/LineageInfo.java</url>
+          <line>514</line>
+          <properties class="org.apache.hadoop.hive.ql.hooks.LineageInfo" method="putDependency">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.reviewboardrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/ExecuteWithHookContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PostExecOrcFileDump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PreExecutePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/LineageLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3700">
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/交易金额稳定态有效&amp;成交口径代码.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="71" column="39" lean-forward="true" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4040">
+          <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/java/org/apache/hive/common/util/HashCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/parse/HiveParser.g">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/HookContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/exec/MoveTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1232">
+          <caret line="246" column="44" selection-start-line="246" selection-start-column="44" selection-end-line="246" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/session/LineageState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/LineageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="514" column="23" selection-start-line="514" selection-start-column="23" selection-end-line="514" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/hooks/PostExecutePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="101" column="56" lean-forward="true" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/OptionsProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="203" column="21" lean-forward="true" selection-start-line="203" selection-start-column="21" selection-end-line="203" selection-end-column="21" />
+          <folding>
+            <element signature="e#1616#1632#0" expanded="true" />
+            <element signature="e#6653#6654#0" expanded="true" />
+            <element signature="e#6683#6684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/OpProcFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="657" selection-start-line="657" selection-end-line="657" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/lib/DefaultRuleDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/lib/DefaultGraphWalker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/lib/LevelOrderWalker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/LineageCtx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/src/java/org/apache/hadoop/hive/cli/CliDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="232" selection-start-line="232" selection-end-line="232" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#8694#8702#0" expanded="true" />
+            <element signature="e#11658#11659#0" expanded="true" />
+            <element signature="e#11699#11700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="1300" selection-start-line="1300" selection-end-line="1300" />
+          <folding>
+            <element signature="e#11567#11568#0" expanded="true" />
+            <element signature="e#11649#11650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/parse/BaseSemanticAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/lineage/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="96" column="52" lean-forward="true" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Transform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ql/src/java/org/apache/hadoop/hive/ql/optimizer/Optimizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="70" column="66" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/DevelopmentTools/apache-atlas-1.1.0/apache-atlas-1.1.0-hive-hook/apache-atlas-hive-hook-1.1.0/hook/hive/dim_szad_material_mapping_postprinter.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/DevelopmentTools/apache-atlas-1.1.0/apache-atlas-1.1.0-hive-hook/apache-atlas-hive-hook-1.1.0/hook/hive/dim_szad_material_mapping_postprinter_customize.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.7 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>hive-orc</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ant:ant:1.6.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

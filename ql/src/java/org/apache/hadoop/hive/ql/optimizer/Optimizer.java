@@ -76,6 +76,8 @@ public class Optimizer {
     Set<String> postExecHooks = Sets.newHashSet(
       Splitter.on(",").trimResults().omitEmptyStrings().split(
         Strings.nullToEmpty(HiveConf.getVar(hiveConf, HiveConf.ConfVars.POSTEXECHOOKS))));
+    // TODO: Hive最新版本源码上, 已经加上了 || postExecHooks.contains("org.apache.hadoop.hive.ql.hooks.LineageLogger"
+    // 这个条件.
     if (postExecHooks.contains("org.apache.hadoop.hive.ql.hooks.PostExecutePrinter")
         || postExecHooks.contains("org.apache.hadoop.hive.ql.hooks.LineageLogger")) {
       transformations.add(new Generator());
