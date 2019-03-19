@@ -35,6 +35,14 @@ import org.apache.hadoop.hive.metastore.api.Table;
 import org.apache.hadoop.hive.ql.stats.StatsUtils;
 
 /**
+ * Note: 本类的核心点如下:
+ *
+ * - index: Map<DependencyKey, Dependency>存储是用来walking的底层存储;
+ * - DependencyKey是(表, 列)的封装, 作为上述Map的key
+ * - Dependency: 封装了实际的某(表, 列)的上下游依赖信息
+ *
+ * 这里传递到pre-execution hooks的意思是从pre就开始传递, 一直到post实际上都有.
+ *
  * This class contains the lineage information that is passed
  * to the PreExecution hook.
  */
@@ -46,6 +54,8 @@ public class LineageInfo implements Serializable {
   private static final long serialVersionUID = 1L;
 
   /**
+   * Note: 列的依赖关系
+   *
    * Enum to track dependency. This enum has the following values:
    * 1. SIMPLE - Indicates that the column is derived from another table column
    *             with no transformations e.g. T2.c1 = T1.c1.
@@ -55,6 +65,8 @@ public class LineageInfo implements Serializable {
    * 4. SCRIPT - Indicates that the column is derived from the output
    *             of a user script through a TRANSFORM, MAP or REDUCE syntax
    *             or from the output of a PTF chain execution.
+   *
+   * Note: 列的依赖关系
    */
   public static enum DependencyType {
     SIMPLE, EXPRESSION, SCRIPT
@@ -359,6 +371,10 @@ public class LineageInfo implements Serializable {
 
   /**
    * This class tracks the dependency information for the base column.
+   *
+   * Note: 记录列的一切依赖信息, 所有的DependencyType都是能够handle的.
+   *
+   * BaseColumnInfo是原始的列信息, 可能会存在多个
    */
   public static class Dependency implements Serializable {
 
@@ -486,6 +502,8 @@ public class LineageInfo implements Serializable {
   }
 
   /**
+   * Note: 这是本类的核心存储.
+   *
    * The map contains an index from the (datacontainer, columnname) to the
    * dependency vector for that tuple. This is used to generate the
    * dependency vectors during the walk of the operator tree.
@@ -500,6 +518,9 @@ public class LineageInfo implements Serializable {
   }
 
   /**
+   * Note: 获取一个列的key是(table, column)的tuple.
+   * 在这个源码文件中, 也将其封装成了一个DependencyKey结构, 任何这两者出现的地方都是相等的.
+   *
    * Gets the dependency for a table, column tuple.
    * @param dc The data container of the column whose dependency is being inspected.
    * @param col The column whose dependency is being inspected.

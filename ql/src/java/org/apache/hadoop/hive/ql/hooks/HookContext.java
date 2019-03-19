@@ -39,6 +39,8 @@ import org.apache.hadoop.hive.shims.Utils;
 import org.apache.hadoop.security.UserGroupInformation;
 import org.apache.hadoop.yarn.api.records.ApplicationId;
 /**
+ * Note: 核心存储是LineageInfo和Index
+ *
  * Hook Context keeps all the necessary information for all the hooks.
  * New implemented hook can get the query plan, job conf and the list of all completed tasks from this hook context
  */
@@ -50,12 +52,14 @@ public class HookContext {
     PRE_EXEC_HOOK, POST_EXEC_HOOK, ON_FAILURE_HOOK
   }
 
+  // Note: 查询计划, TODO: 应该还是挺有用的
   private QueryPlan queryPlan;
   private final QueryState queryState;
   private HiveConf conf;
   private List<TaskRunner> completeTaskList;
   private Set<ReadEntity> inputs;
   private Set<WriteEntity> outputs;
+  // Note: 这里嵌入了可以做列级别血缘分析的类
   private LineageInfo linfo;
   private Index depMap;
   private UserGroupInformation ugi;
@@ -73,6 +77,7 @@ public class HookContext {
   private final String threadId;
   private final boolean isHiveServerQuery;
   private final PerfLogger perfLogger;
+  // Note: TODO: 这是什么?
   private final QueryInfo queryInfo;
 
   public HookContext(QueryPlan queryPlan, QueryState queryState,

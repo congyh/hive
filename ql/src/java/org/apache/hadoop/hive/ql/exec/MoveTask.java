@@ -576,6 +576,7 @@ public class MoveTask extends Task<MoveWork> implements Serializable {
       // update columnar lineage for each partition
       dc = new DataContainer(table.getTTable(), partn.getTPartition());
 
+      // Note: 在这里进行Lineage的设置
       // Don't set lineage on delete as we don't have all the columns
       if (work.getLoadTableWork().getWriteType() != AcidUtils.Operation.DELETE &&
           work.getLoadTableWork().getWriteType() != AcidUtils.Operation.UPDATE) {

@@ -22,6 +22,7 @@ import org.apache.hadoop.hive.common.classification.InterfaceAudience;
 import org.apache.hadoop.hive.common.classification.InterfaceStability;
 
 /**
+ * Note: 这个是Pre/Post生命周期的新接口
  *
  * ExecuteWithHookContext is a new interface that the Pre/Post Execute Hook can run with the HookContext.
  *

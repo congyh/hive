@@ -59,6 +59,12 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * Note: 打印lineage信息到log file中, 挂在post execute生命周期上, 可以说和atlas的HiveHook是不同的实现.
+ *
+ * 这个是打在日志中的, atlas的是打在Kafka中的.
+ *
+ * 底层也是用到了LineageInfo中的Dependency, BaseColumnInfo进行Lineage的收集的.
+ *
  * Implementation of a post execute hook that logs lineage info to a log file.
  */
 public class LineageLogger implements ExecuteWithHookContext {
@@ -86,6 +92,8 @@ public class LineageLogger implements ExecuteWithHookContext {
      * The types of Edge.
      */
     public static enum Type {
+      // Note: PREDICATE就是谓词的意思
+      // 这种边出现在WHERE或ON连接条件中的列和SELECT中的结果列之间的关系中.
       PROJECTION, PREDICATE
     }
 
@@ -163,6 +171,8 @@ public class LineageLogger implements ExecuteWithHookContext {
   @Override
   public void run(HookContext hookContext) {
     assert(hookContext.getHookType() == HookType.POST_EXEC_HOOK);
+    // TODO: 为啥不直接拿LineageInfo, 而是需要重新解析??
+    // Note: 获取查询计划
     QueryPlan plan = hookContext.getQueryPlan();
     Index index = hookContext.getIndex();
     SessionState ss = SessionState.get();
@@ -172,7 +182,7 @@ public class LineageLogger implements ExecuteWithHookContext {
       try {
         StringBuilderWriter out = new StringBuilderWriter(1024);
         JsonWriter writer = new JsonWriter(out);
-
+        // Note: 获取查询语句
         String queryStr = plan.getQueryStr().trim();
         writer.beginObject();
         writer.name("version").value(FORMAT_VERSION);
@@ -244,6 +254,8 @@ public class LineageLogger implements ExecuteWithHookContext {
   }
 
   /**
+   * Note: 根据QueryPlan解析出所有的edge, 也就是列级别的血缘关系.
+   *
    * Based on the final select operator, find out all the target columns.
    * For each target column, find out its sources based on the dependency index.
    */

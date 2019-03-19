@@ -70,6 +70,7 @@ import org.slf4j.LoggerFactory;
 
 
 /**
+ * Note: 语法分析的context.
  * Context for Semantic Analyzers. Usage: not reusable - construct a new one for
  * each query should call clear() at end of use to remove temporary folders
  */

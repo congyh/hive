@@ -89,6 +89,7 @@ public class RuleRegExp implements Rule {
   }
 
   /**
+   * Note: 定义一条规则
    * The rule specified by the regular expression. Note that, the regular
    * expression is specified in terms of Node name. For eg: TS.*RS -> means
    * TableScan Node followed by anything any number of times followed by

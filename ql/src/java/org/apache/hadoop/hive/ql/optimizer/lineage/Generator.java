@@ -60,6 +60,7 @@ public class Generator extends Transform {
   private static final Logger LOG = LoggerFactory.getLogger(Generator.class);
 
   private final Set<String> hooks;
+  // Note: Hive的Lineage Generator内部竟然内嵌了atlas的内容
   private static final String ATLAS_HOOK_CLASSNAME = "org.apache.atlas.hive.hook.HiveHook";
 
   public Generator(Set<String> hooks) {
@@ -86,6 +87,8 @@ public class Generator extends Transform {
     }
     Index index = pctx.getQueryState().getLineageState().getIndex();
     if (index == null) {
+      // Note: 这里是进行index初始化的地方
+      // 拿到了ParseContext中的Index field的引用, 并初始化
       index = new Index();
     }
 
@@ -93,31 +96,46 @@ public class Generator extends Transform {
     // Create the lineage context
     LineageCtx lCtx = new LineageCtx(pctx, index);
 
+    // Note: TODO: NodeProcessor是什么?
     Map<Rule, NodeProcessor> opRules = new LinkedHashMap<Rule, NodeProcessor>();
+    // Note: 定义规则集, name可以随便定义, %并不是一个wildcard.
+    // TableScanOperator.getOperatorName()返回的是"TS", 意思是TableScan
     opRules.put(new RuleRegExp("R1", TableScanOperator.getOperatorName() + "%"),
       OpProcFactory.getTSProc());
+    // Note: SCR
     opRules.put(new RuleRegExp("R2", ScriptOperator.getOperatorName() + "%"),
       OpProcFactory.getTransformProc());
+    // Note: UDTF
     opRules.put(new RuleRegExp("R3", UDTFOperator.getOperatorName() + "%"),
       OpProcFactory.getTransformProc());
+    // Note: SEL
     opRules.put(new RuleRegExp("R4", SelectOperator.getOperatorName() + "%"),
       OpProcFactory.getSelProc());
+    // Note: GBY
     opRules.put(new RuleRegExp("R5", GroupByOperator.getOperatorName() + "%"),
       OpProcFactory.getGroupByProc());
+    // Note: Union
     opRules.put(new RuleRegExp("R6", UnionOperator.getOperatorName() + "%"),
       OpProcFactory.getUnionProc());
+    // Note: MAPJOIN
     opRules.put(new RuleRegExp("R7",
       CommonJoinOperator.getOperatorName() + "%|" + MapJoinOperator.getOperatorName() + "%"),
       OpProcFactory.getJoinProc());
+    // Note: RS
     opRules.put(new RuleRegExp("R8", ReduceSinkOperator.getOperatorName() + "%"),
       OpProcFactory.getReduceSinkProc());
+    // Note: LVJ
     opRules.put(new RuleRegExp("R9", LateralViewJoinOperator.getOperatorName() + "%"),
       OpProcFactory.getLateralViewJoinProc());
+    // Note: PTF
     opRules.put(new RuleRegExp("R10", PTFOperator.getOperatorName() + "%"),
       OpProcFactory.getTransformProc());
+    // Note: FIL
     opRules.put(new RuleRegExp("R11", FilterOperator.getOperatorName() + "%"),
       OpProcFactory.getFilterProc());
 
+    // Note: TODO: 看到这里了
+    // Note: OpProcFactory.getDefaultProc()返回的是DefaultLineage.
     // The dispatcher fires the processor corresponding to the closest matching rule and passes the context along
     Dispatcher disp = new DefaultRuleDispatcher(OpProcFactory.getDefaultProc(), opRules, lCtx);
     GraphWalker ogw = new LevelOrderWalker(disp, 2);

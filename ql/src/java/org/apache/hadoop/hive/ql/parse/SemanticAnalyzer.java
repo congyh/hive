@@ -12242,10 +12242,12 @@ public class SemanticAnalyzer extends BaseSemanticAnalyzer {
 
         // Generate lineage info for create view statements
         // if LineageLogger hook is configured.
+          // Note: 上面那行实际上不重要, 重点的是下面的transformation
         // Add the transformation that computes the lineage information.
         Set<String> postExecHooks = Sets.newHashSet(Splitter.on(",").trimResults()
             .omitEmptyStrings()
             .split(Strings.nullToEmpty(HiveConf.getVar(conf, HiveConf.ConfVars.POSTEXECHOOKS))));
+        // Note: TODO: postExecHook需要的一部分内容需要在这里生成...
         if (postExecHooks.contains("org.apache.hadoop.hive.ql.hooks.PostExecutePrinter")
             || postExecHooks.contains("org.apache.hadoop.hive.ql.hooks.LineageLogger")
             || postExecHooks.contains("org.apache.atlas.hive.hook.HiveHook")) {
@@ -12255,6 +12257,7 @@ public class SemanticAnalyzer extends BaseSemanticAnalyzer {
           for (Transform t : transformations) {
             pCtx = t.transform(pCtx);
           }
+          // Note: TODO: 这个还没有看懂
           // we just use view name as location.
           queryState.getLineageState()
               .mapDirToOp(new Path(createVwDesc.getViewName()), sinkOp);

@@ -44,6 +44,7 @@ import org.apache.hadoop.hive.ql.session.SessionState.LogHelper;
 import org.apache.hive.common.util.HiveStringUtils;
 
 /**
+ * Note: HookRunner, 负责执行所有的hook(pre, post的都负责)
  * Handles hook executions for {@link Driver}.
  */
 public class HookRunner {
@@ -67,6 +68,7 @@ public class HookRunner {
     this.console = console;
   }
 
+  // Note: 从hiveconf中加载所有的hooks
   public void initialize() {
     if (initialized) {
       return;
@@ -76,6 +78,7 @@ public class HookRunner {
     saHooks.addAll(loadHooksFromConf(HiveConf.ConfVars.SEMANTIC_ANALYZER_HOOK, HiveSemanticAnalyzerHook.class));
     driverRunHooks.addAll(loadHooksFromConf(HiveConf.ConfVars.HIVE_DRIVER_RUN_HOOKS, HiveDriverRunHook.class));
     preExecHooks.addAll(loadHooksFromConf(HiveConf.ConfVars.PREEXECHOOKS, ExecuteWithHookContext.class));
+    // Note: 这里是实际的从HiveConf中加载hook的地方
     postExecHooks.addAll(loadHooksFromConf(HiveConf.ConfVars.POSTEXECHOOKS, ExecuteWithHookContext.class));
     onFailureHooks.addAll(loadHooksFromConf(HiveConf.ConfVars.ONFAILUREHOOKS, ExecuteWithHookContext.class));
 
@@ -275,6 +278,7 @@ public class HookRunner {
 
   public void runPostExecHooks(HookContext hookContext) throws HiveException {
     initialize();
+    // Note: 通过回调执行
     invokeGeneralHook(postExecHooks, PerfLogger.POST_HOOK, hookContext);
   }
 
@@ -283,6 +287,7 @@ public class HookRunner {
     invokeGeneralHook(onFailureHooks, PerfLogger.FAILURE_HOOK, hookContext);
   }
 
+  // Note: 所有种类的hook都是这个执行流程
   private static void invokeGeneralHook(List<ExecuteWithHookContext> hooks, String prefix, HookContext hookContext)
       throws HiveException {
     if (hooks.isEmpty()) {
@@ -293,6 +298,7 @@ public class HookRunner {
 
       for (ExecuteWithHookContext hook : hooks) {
         perfLogger.PerfLogBegin(CLASS_NAME, prefix + hook.getClass().getName());
+        // Note: 通过回调的方式执行
         hook.run(hookContext);
         perfLogger.PerfLogEnd(CLASS_NAME, prefix + hook.getClass().getName());
       }

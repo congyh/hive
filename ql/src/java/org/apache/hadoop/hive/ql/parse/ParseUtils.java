@@ -52,6 +52,7 @@ import org.slf4j.LoggerFactory;
 
 
 /**
+ * Note: 这里是通过Ast将hive语句解析成语法树的地方
  * Library of utility functions used in the parse code.
  *
  */

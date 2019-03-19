@@ -88,6 +88,7 @@ public class QueryPlan implements Serializable {
    */
   private HashSet<WriteEntity> outputs;
   /**
+   * TODO: 竟然这里面也有血统信息, 但是到底是用来干嘛的, 还需要查看.
    * Lineage information for the query.
    */
   protected LineageInfo linfo;

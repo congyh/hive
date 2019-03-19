@@ -34,6 +34,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * Note: 这里是hive cli driver的参数解析器,
+ * 可以看到下面有hive -e, hive -f等选项
  * OptionsProcessor.
  *
  */

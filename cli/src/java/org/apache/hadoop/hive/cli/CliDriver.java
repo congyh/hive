@@ -236,6 +236,7 @@ public class CliDriver {
           out.println(cmd);
         }
 
+        // Note: 这里正式进入了Driver中方法的流程
         ret = qp.run(cmd).getResponseCode();
         if (ret != 0) {
           qp.close();

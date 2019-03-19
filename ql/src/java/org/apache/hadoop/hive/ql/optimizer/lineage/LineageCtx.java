@@ -41,6 +41,10 @@ import org.apache.hadoop.hive.ql.parse.ParseContext;
 import org.apache.hadoop.hive.ql.plan.OperatorDesc;
 
 /**
+ * Note: 是Lineage系统中的底层存储, 核心存储结构是Index.
+ *
+ * 和Generator联用, 在语法分析阶段进行Index解析
+ *
  * This class contains the lineage context that is passed
  * while walking the operator tree in Lineage. The context
  * contains the LineageInfo structure that is passed to the
@@ -51,6 +55,8 @@ public class LineageCtx implements NodeProcessorCtx {
   public static class Index implements Serializable {
 
     /**
+     * Note: 这是列级别血缘关系的核心存储结构
+     *
      * The map contains an index from the (operator, columnInfo) to the
      * dependency vector for that tuple. This is used to generate the
      * dependency vectors during the walk of the operator tree.

@@ -612,6 +612,7 @@ public class Driver implements IDriver {
 
       ASTNode tree;
       try {
+          // Note: 这里解析得到了语法树
         tree = ParseUtils.parse(command, ctx);
       } catch (ParseException e) {
         parseError = true;
@@ -655,6 +656,7 @@ public class Driver implements IDriver {
         generateValidTxnList();
       }
 
+      // Note: 这里是进行lineage分析的入口
       sem.analyze(tree, ctx);
 
       if (executeHooks) {
@@ -677,6 +679,7 @@ public class Driver implements IDriver {
 
       // get the output schema
       schema = getSchema(sem, conf);
+      // Note: QueryPlan初始化的地方
       plan = new QueryPlan(queryStr, sem, queryDisplay.getQueryStartTime(), queryId,
           queryState.getHiveOperation(), schema);
 
@@ -1903,6 +1906,7 @@ public class Driver implements IDriver {
     return compileLock;
   }
 
+  // Note: 本方法是hive query生命周期的主要流程, 包括pre, compile, run, post等周期
   private void runInternal(String command, boolean alreadyCompiled) throws CommandProcessorResponse {
     errorMessage = null;
     SQLState = null;
@@ -1930,6 +1934,7 @@ public class Driver implements IDriver {
     // the method has been returned by an error or not.
     boolean isFinishedWithError = true;
     try {
+        // Note: hookContext初始化的时候只包含两个部分, conf, cmd(约等于sql)
       HiveDriverRunHookContext hookContext = new HiveDriverRunHookContextImpl(conf,
           alreadyCompiled ? ctx.getCmd() : command);
       // Get all the driver run hooks and pre-execute them.
@@ -2009,6 +2014,7 @@ public class Driver implements IDriver {
       }
 
       try {
+          // Note: 实际的执行sql逻辑竟然这么不起眼...
         execute();
       } catch (CommandProcessorResponse cpr) {
         rollback(cpr);
@@ -2036,6 +2042,7 @@ public class Driver implements IDriver {
 
       // Take all the driver run hooks and post-execute them.
       try {
+          // Note: 在这里运行postDriverHooks
         hookRunner.runPostDriverHooks(hookContext);
       } catch (Exception e) {
         errorMessage = "FAILED: Hive Internal Error: " + Utilities.getNameMessage(e);
@@ -2225,6 +2232,7 @@ public class Driver implements IDriver {
     boolean noName = StringUtils.isEmpty(conf.get(MRJobConfig.JOB_NAME));
 
     int maxlen;
+    // Note: hive里面的硬编码还是挺严重的...
     if ("spark".equals(conf.getVar(ConfVars.HIVE_EXECUTION_ENGINE))) {
       maxlen = conf.getIntVar(HiveConf.ConfVars.HIVESPARKJOBNAMELENGTH);
     } else {
@@ -2278,11 +2286,14 @@ public class Driver implements IDriver {
       SessionState ss = SessionState.get();
 
       // TODO: should this use getUserFromAuthenticator?
+        // Note: 这里才是hookContext最终初始化的地方
+        // 在这里queryPlan还是null
       hookContext = new PrivateHookContext(plan, queryState, ctx.getPathToCS(), SessionState.get().getUserName(),
           ss.getUserIpAddress(), InetAddress.getLocalHost().getHostAddress(), operationId,
           ss.getSessionId(), Thread.currentThread().getName(), ss.isHiveServerQuery(), perfLogger, queryInfo, ctx);
       hookContext.setHookType(HookContext.HookType.PRE_EXEC_HOOK);
 
+      // Note: preHook执行的地方
       hookRunner.runPreHooks(hookContext);
 
       // Trigger query hooks before query execution.
@@ -2312,6 +2323,7 @@ public class Driver implements IDriver {
 
       checkInterrupted("before running tasks.", hookContext, perfLogger);
 
+      // Note: driverContext实际上维护了task队列
       DriverContext driverCxt = new DriverContext(ctx);
       driverCxt.prepare(plan);
 
@@ -2465,6 +2477,7 @@ public class Driver implements IDriver {
 
       hookContext.setHookType(HookContext.HookType.POST_EXEC_HOOK);
 
+      // Note: 这里是postExecHooks实际上执行的地方
       hookRunner.runPostExecHooks(hookContext);
 
       if (SessionState.get() != null) {

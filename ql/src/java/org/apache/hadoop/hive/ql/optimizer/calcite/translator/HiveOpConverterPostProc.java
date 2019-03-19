@@ -49,10 +49,18 @@ public class HiveOpConverterPostProc extends Transform {
   private ParseContext                                  pctx;
   private Map<String, Operator<? extends OperatorDesc>> aliasToOpInfo;
 
+  /**
+   * Note: 通过ParseContext参数进行context的传递.
+   * @param pctx
+   *          input parse context
+   * @return
+   * @throws SemanticException
+   */
   @Override
   public ParseContext transform(ParseContext pctx) throws SemanticException {
     // 0. We check the conditions to apply this transformation,
     //    if we do not meet them we bail out
+    // Note: cbo不打开的情况下, 无需纠结下面几个参数.
     final boolean cboEnabled = HiveConf.getBoolVar(pctx.getConf(), HiveConf.ConfVars.HIVE_CBO_ENABLED);
     final boolean returnPathEnabled = HiveConf.getBoolVar(pctx.getConf(), HiveConf.ConfVars.HIVE_CBO_RETPATH_HIVEOP);
     final boolean cboSucceeded = pctx.getContext().isCboSucceeded();

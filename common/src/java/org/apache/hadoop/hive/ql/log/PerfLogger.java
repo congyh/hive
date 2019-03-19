@@ -32,6 +32,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Note: performance Logger, 也就是打印方法运行时间的地方.
  * PerfLogger.
  *
  * Can be used to measure and log the time spent by a piece of code.

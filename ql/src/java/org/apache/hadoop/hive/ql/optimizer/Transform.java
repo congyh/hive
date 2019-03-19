@@ -24,6 +24,8 @@ import org.apache.hadoop.hive.ql.parse.SemanticException;
 import org.apache.hadoop.hive.ql.session.SessionState;
 
 /**
+ * Note: 优化器接口.
+ *
  * Optimizer interface. All the rule-based optimizations implement this
  * interface. All the transformations are invoked sequentially. They take the
  * current parse context (which contains the operator tree among other things),

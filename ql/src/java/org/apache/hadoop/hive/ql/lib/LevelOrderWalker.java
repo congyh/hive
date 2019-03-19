@@ -50,6 +50,7 @@ public class LevelOrderWalker extends DefaultGraphWalker {
   private HashSet<Class<? extends Node>> nodeTypes = new HashSet<Class<? extends Node>>();
 
   // How many levels of ancestors to keep in the stack during dispatching
+  // Note: TODO: 这个的作用是什么?
   private final int numLevels;
 
   /**
