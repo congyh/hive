@@ -124,6 +124,7 @@ public class PostExecutePrinter implements ExecuteWithHookContext {
     PreExecutePrinter.printEntities(console, outputs, "POSTHOOK: Output: ");
 
     // Also print out the generic lineage information if there is any
+    // Note: TODO: 下面这段是可以参考生成带dp的血缘的地方.
     if (linfo != null) {
       LinkedList<Map.Entry<DependencyKey, Dependency>> entry_list =
         new LinkedList<Map.Entry<DependencyKey, Dependency>>(linfo.entrySet());

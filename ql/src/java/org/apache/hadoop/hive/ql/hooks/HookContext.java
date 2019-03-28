@@ -52,12 +52,14 @@ public class HookContext {
     PRE_EXEC_HOOK, POST_EXEC_HOOK, ON_FAILURE_HOOK
   }
 
-  // Note: 查询计划, TODO: 应该还是挺有用的
+  // Note: 查询计划
   private QueryPlan queryPlan;
   private final QueryState queryState;
   private HiveConf conf;
   private List<TaskRunner> completeTaskList;
+  // Note: 这里是所有的上游表信息
   private Set<ReadEntity> inputs;
+  // Note: 这里是所有的下游表信息
   private Set<WriteEntity> outputs;
   // Note: 这里嵌入了可以做列级别血缘分析的类
   private LineageInfo linfo;
